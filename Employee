@@ -1,0 +1,4 @@
+public Map<String, List<Employee>> groupByJobTitle(List<Employee> employeeList) {
+  return employeeList.stream()
+     .collect(Collectors.groupingBy(Employee::getTitle));
+}
